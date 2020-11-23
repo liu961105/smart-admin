@@ -42,11 +42,12 @@ public enum JudgeEnum implements BaseEnum {
     public static JudgeEnum valueOf(Integer status) {
         JudgeEnum[] values = JudgeEnum.values();
         Optional<JudgeEnum> first = Arrays.stream(values).filter(e -> e.getValue().equals(status)).findFirst();
-        return !first.isPresent() ? null : first.get();
+        return first.orElse(null);
     }
 
     public static boolean isExist(Integer status) {
         JudgeEnum judgeEnum = valueOf(status);
         return judgeEnum != null;
+
     }
 }

@@ -6,7 +6,7 @@
 
 <script>
 import echarts from 'echarts';
-import tdTheme from './theme.json';
+// import tdTheme from './theme.json';
 import { on, off } from '@/lib/util';
 echarts.registerTheme('tdTheme', tdTheme);
 export default {

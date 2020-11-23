@@ -1,8 +1,5 @@
 package net.lab1024.smartadmin.common.domain;
-
-
 import net.lab1024.smartadmin.common.constant.ResponseCodeConst;
-
 /**
  * 返回类
  *
